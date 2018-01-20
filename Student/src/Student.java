@@ -6,10 +6,6 @@ public class Student {
 	private String housing;
 	private int mealPlan;
 	
-	public static void main(String[] args) {
-		
-	}
-	
 	public void setHousing(String s) {
 		housing = s;
 	}
