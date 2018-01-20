@@ -98,7 +98,11 @@ public class Student {
 			default:
 				break; 
 		}
-	}	
+	}
+	
+	public double getExpense() {
+		return expenses;
+	}
 	
 	
 }
