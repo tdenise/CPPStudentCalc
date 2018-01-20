@@ -2,21 +2,17 @@
 public class Driver {
   public static void main(String[] args){
     
-    Student hannah = new Student(14);
-    Student alex = new Student("In state"); 
+	Student hannah = new Student(14);
+	Student alex = new Student("In state");
     
     hannah.calculateExpenses(); 
     alex.calculateExpenses();
-    hannah.displayExpenses(); 
     
-    displayStudents(); 
+    System.out.println("The following students are displayed in the following:");
+    System.out.println("Hannah's Expense: " + hannah.getExpense() + "\tTuitiion: " + hannah.getTuition() + "\tHousing: " + hannah.getHousing() + "\tMeal Plan: " + hannah.getMealPlan());
+    System.out.println("Alex's Expense: " + alex.getExpense() + "\tTuitiion: " + alex.getTuition() + "\tHousing: " + alex.getHousing() + "\tMeal Plan: " + alex.getMealPlan()); 
     
   }
   
-  public static void displayStudents(){
-    System.out.println("The following students are displayed in the following:");
-    System.out.println("Hannah: Expense: " + hannah.getExpense() + " Tuitiion: " + hannah.getTuition() + "Housing: " + hannah.getHousing() + "Meal Plan: " + hannah.getMealPlan());
-    System.out.println("Alex: Expense: " + alex.getExpense() + " Tuition: " + alex.getTuition() + "Housing: " + alex.getHousing() + "Meal Plan: " + alex.getMealPlan());
-  }
 
 }

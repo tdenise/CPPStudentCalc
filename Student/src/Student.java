@@ -7,33 +7,28 @@ public class Student {
 	private int mealPlan;
 	
 	public Student(){
-		housing = “None”;
-		residency = “In state”; //can change defaults later if you want
+		housing = "None";
+		residency = "In state"; //can change defaults later if you want
 		mealPlan = 14; 
 	}
 	
-	public Student(String house){
-		housing = house; 
-		residency = “In state”; 
-		mealPlan = 14; 
-	}
-	
+
 	public Student(int meal){
 		mealPlan = meal; 
-		housing = “None”;
-		residency = “In state”;  
+		housing = "None";
+		residency = "In state";  
 	}
 	
 	public Student(String res){
 		residency = res; 
-		housing = “None”; 
+		housing = "None"; 
 		mealPlan = 14; 
 	}
 	
 	public Student(int meal, String res){
 		mealPlan = meal; 
 		residency = res; 
-		housing = “None”; 
+		housing = "None"; 
 	}
 	
 	public Student(String house, int meal, String res){
@@ -73,7 +68,7 @@ public class Student {
 		return tuition;
 	}
 	
-	public void displayingExpenses(double e) {
+	public void displayExpenses(double e) {
 		expenses = e;
 		System.out.println("Your total expenses are: " + expenses);
 	}
@@ -103,6 +98,6 @@ public class Student {
 	public double getExpense() {
 		return expenses;
 	}
-	
+
 	
 }
