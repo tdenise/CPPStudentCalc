@@ -14,7 +14,9 @@ public class Driver {
   }
   
   public static void displayStudents(){
-    
+    System.out.println("The following students are displayed in the following:");
+    System.out.println("Hannah: Expense: " + hannah.getExpense() + " Tuitiion: " + hannah.getTuition() + "Housing: " + hannah.getHousing() + "Meal Plan: " + hannah.getMealPlan());
+    System.out.println("Alex: Expense: " + alex.getExpense() + " Tuitiion: " + alex.getTuition() + "Housing: " + alex.getHousing() + "Meal Plan: " + alex.getMealPlan());
   }
 
 }
