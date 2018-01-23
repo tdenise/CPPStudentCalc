@@ -67,7 +67,7 @@ public class Student {
 		return tuition;
 	}
 	
-	public void calculateExpenses() {
+	private void calculateExpenses() {
 		expenses += tuition; 
 		if (housing.equalsIgnoreCase("Dorming")){
 			expenses += 10000.00; 
