@@ -47,7 +47,7 @@ public class Student {
 	public void setMealPlan(int i) {
 		mealPlan = i;
 	}
-	
+
 	public int getMealPlan() {
 		return mealPlan;
 	}
@@ -97,7 +97,7 @@ public class Student {
 		setTuition(residency); 
 		calculateExpenses(); 
 		expenses = getExpense(); 
-		System.out.println("Your total expenses are: " + expenses);
+		System.out.println(" your total expenses are: " + expenses);
 	}
 	
 
