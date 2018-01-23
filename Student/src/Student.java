@@ -21,7 +21,7 @@ public class Student {
 	
 	public Student(String res){
 		residency = res; 
-		housing = "None"; 
+		housing = "None";		
 		mealPlan = 14; 
 	}
 	
@@ -36,7 +36,6 @@ public class Student {
 		mealPlan = meal; 
 		residency = res; 
 	}
-	
 	public void setHousing(String s) {
 		housing = s;
 	}
@@ -68,11 +67,6 @@ public class Student {
 		return tuition;
 	}
 	
-	public void displayExpenses(double e) {
-		expenses = e;
-		System.out.println("Your total expenses are: " + expenses);
-	}
-	
 	public void calculateExpenses() {
 		expenses += tuition; 
 		if (housing.equalsIgnoreCase("Dorming")){
@@ -98,6 +92,13 @@ public class Student {
 	public double getExpense() {
 		return expenses;
 	}
+	
+	public void displayExpenses() {
+		calculateExpenses(); 
+		expenses = getExpense(); 
+		System.out.println("Your total expenses are: " + expenses);
+	}
+	
 
 	
 }
