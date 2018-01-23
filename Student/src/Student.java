@@ -52,14 +52,14 @@ public class Student {
 		return mealPlan;
 	}
 	
-	public void setTuition(String residency) {
-		residency = this.residency;
+	private void setTuition(String res) {
+		residency = res;
 		if(residency.equalsIgnoreCase("In state")){
 			tuition = 8000.00; 	
 		} else if (residency.equalsIgnoreCase("Out of state")){
 			tuition = 16000.00; 	
 		} else {
-			tuition = 48000.00; //i'm making up numbers LOL	
+			tuition = 48000.00; 
 		}
 	}
 	
@@ -94,6 +94,7 @@ public class Student {
 	}
 	
 	public void displayExpenses() {
+		setTuition(residency); 
 		calculateExpenses(); 
 		expenses = getExpense(); 
 		System.out.println("Your total expenses are: " + expenses);
